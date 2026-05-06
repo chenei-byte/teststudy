@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-page: #f8f5ff;
+  --bg-card: #ffffff;
+  --text-primary: #1e1b2e;
+  --text-muted: #6b6580;
+  --accent: #6366f1;
+  --ring-subtle: rgba(99, 102, 241, 0.25);
+}
+
+.dark {
+  --bg-page: #12101c;
+  --bg-card: #1c1829;
+  --text-primary: #f4f2fa;
+  --text-muted: #a39ab8;
+  --accent: #818cf8;
+  --ring-subtle: rgba(129, 140, 248, 0.35);
+}
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  body {
+    @apply min-h-screen font-sans text-[var(--text-primary)] bg-[var(--bg-page)] transition-colors duration-300;
+  }
+}
+
+/* subject accent utilities */
+.subj-math {
+  --subj: #f472b6;
+  --subj-bg: rgba(244, 114, 182, 0.15);
+}
+.subj-science {
+  --subj: #22d3ee;
+  --subj-bg: rgba(34, 211, 238, 0.15);
+}
+.subj-history {
+  --subj: #fbbf24;
+  --subj-bg: rgba(251, 191, 36, 0.18);
+}
+.subj-language {
+  --subj: #a78bfa;
+  --subj-bg: rgba(167, 139, 250, 0.18);
+}
+.subj-cs {
+  --subj: #4ade80;
+  --subj-bg: rgba(74, 222, 128, 0.15);
+}
+.subj-general {
+  --subj: #94a3b8;
+  --subj-bg: rgba(148, 163, 184, 0.2);
+}
